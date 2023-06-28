@@ -4,7 +4,9 @@ from streamlit_timeline import timeline
 st.set_page_config(page_title="TYHuang's Web", layout="wide", page_icon='😇')
 
 with st.sidebar:
-	st.write("👋"+"I'm Tzu-Yang, can call me Peter. Welcome to my personal website! Currently am Analystics & Insights Professional at Amazon Ads. But laid off.")
+	st.write("👋"+"""Welcome to my personal website! I'm Peter (Tzu-Yang), a passionate data scientist who enjoys learning and implementing cutting-edge methodologies to tackle complex problems. 
+					 Currently, I am an Analytics & Insights Professional at Amazon Advertising, where I thrive on leveraging data to drive impactful solutions. 
+					 Feel free to explore my website to learn more about my work and projects.""")
 	col1, col2 = st.columns([1, 10])
 	with col1:
 		st.image('./images/linkedin_icon.png', width=25)
