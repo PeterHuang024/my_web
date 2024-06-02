@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Analyst III, Revenue Engineeing",
+        "company": "🛫 American Airlines",
+        "company_link": "https://www.aa.com",
+        "location": "Dallas, TX",
+        "duration": "October 2023 - Present",
+        "description": "Data Science/ Machine Learning/ A/B Testing/ Visualization",
+        "space1":102,
+        "space2":130,
+        "links": []
+    },
+    {
+        "title": "Analytics & Insights Professional",
+        "company": "🍌 Amazon Ads",
+        "company_link": "https://advertising.amazon.com/",
+        "location": "New York, NY",
+        "duration": "August 2022 - July 2023",
+        "description": "Data Science/ Statistical Analysis/ Visualization",
+        "space1":99,
+        "space2":135,
+        "links": []
+    },
+    {
+        "title": "Data Science Researcher",
+        "company": "🔬 SOS + CD Lab, Syracuse University",
+        "company_link": "https://scienceofscience.org",
+        "location": "Syracuse, NY",
+        "duration": "September 2020 - May 2022",
+        "description": "Data Science/ Machine Learning/ Deep Learning/ Statistical Analysis",
+        "space1":107,
+        "space2":90,
+        "links": [{"Graphical integrity issues in open access publications: Detection and patterns of proportional ink violations"
+                    : "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009650"},
+                  {"A computational analysis of accessibility, readability, and explainability of figures in open access publications"
+                    : "https://epjds.epj.org/articles/epjdata/abs/2023/01/13688_2023_Article_380/13688_2023_Article_380.html"}]
+    },
+    {
+        "title": "IT Intern, Data Science",
+        "company": "🚂 NJ Transit",
+        "company_link": "https://www.njtransit.com",
+        "location": "Newark, NJ",
+        "duration": "June 2021 - August 2021",
+        "description": "Data Science/ Machine Learning/ Statistical Analysis/ Hypothesis Testing/ Visualization",
+        "space1":118,
+        "space2":142,
+        "links": []
+    },
+    {
+        "title": "Research Assistant",
+        "company": "🏫 National Chengchi University",
+        "company_link": "https://www.nccu.edu.tw",
+        "location": "Taipei, Taiwan",
+        "duration": "July 2019 - June 2020",
+        "description": "Data Science/ Statistical Modeling/ Simulation/ Risk Model",
+        "space1":131,
+        "space2":97,
+        "links": [{"Data Analysis of the Risks of Type 2 Diabetes Mellitus Complications before Death Using a Data-Driven Modelling Approach: Methodologies and Challenges in Prolonged Diseases"
+                    : "https://www.mdpi.com/2078-2489/12/8/326"}]
+    }
+]
+
+            
