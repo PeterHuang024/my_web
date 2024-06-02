@@ -1,33 +1,61 @@
 import streamlit as st
-from streamlit_timeline import timeline
+import base64
 
-st.set_page_config(page_title="TYHuang's Web", layout="wide", page_icon='😇')
+st.set_page_config(page_title="TYHuang's Web", layout="wide", page_icon='⭐️')
+
+st.markdown("""
+    <style>
+        [data-testid=stSidebar] {
+            background-color: #FFF8DC;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 with st.sidebar:
-	st.write("👋"+"""Welcome to my personal website! I'm Peter (Tzu-Yang), a passionate data scientist who enjoys learning and implementing cutting-edge methodologies to tackle complex problems. 
-					 Currently, I am an Analytics & Insights Professional at Amazon Advertising, where I thrive on leveraging data to drive impactful solutions. 
-					 Feel free to explore my website to learn more about my work and projects.""")
-	col1, col2 = st.columns([1, 10])
-	with col1:
-		st.image('./images/linkedin_icon.png', width=25)
-	with col2:
-		st.markdown('[Linkedin](https://www.linkedin.com/in/tyanghuang)')
+	st.image("images/linkedin_icon.png", use_column_width=True)
+	st.title("""Tzu-Yang (Peter) Huang""")
+	st.markdown("- Data Scientist")
+
+@st.cache_data
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
 
-with open('timeline.json', "r") as f:
-    timeline_data = f.read()
-        
-timeline(timeline_data, height=600)
+img = get_img_as_base64("images/bg.png")
 
-# render timeline
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/png;base64,{img}");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top left;
+        opacity: 0.75; /* Adjust the opacity value for transparency */
+    }}
+    .middle-text {{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-align: center;
+    }}
 
-st.subheader('Skills')
-st.markdown('- **Programming Languages**: Python, R, SQL, T-SQL')
-st.markdown('- **Database and Storage**: MSSQL, Oracle Database, S3, Redshift')
-st.markdown('- **Software & Tools**: PySpark, Docker, AWS, Azure, Hadoop, SSRS, Git, Tableau, Power BI, Power Apps, MS Excel, CodeCommit')
+    [data-testid="stHeader"] {{
+	background: rgba(0,0,0,0);
+	}}
 
-st.subheader('Publications')
-st.markdown("""- [A computational analysis of accessibility, readability, and explainability of figures in open access publications](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-023-00380-y)
-				, Mar 2023  \n Han Zhung, Tzu-Yang Huang, Daniel E. Acuna, EPJ Data Science""")
-st.markdown("""- [Graphical integrity issues in open access publications: detection and patterns of proportional ink violations](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009650)
-				, Dec 2021  \n Han Zhung, Tzu-Yang Huang, Daniel E. Acuna, PLOS Computational Biology""")
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+st.title("Hi! I'm Peter")
+st.write("Experienced Data Scientist with a track record in the tech and aviation industries.")
+st.write("Proficient in Data Science, A/B testing, Machine Learning, Data Modeling & ETL, and Analytics & Visualization.") 
+st.write("#Data Science #Analytics #Machine Learning")
