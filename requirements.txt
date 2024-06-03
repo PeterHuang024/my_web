@@ -1,2 +1,2 @@
 streamlit-timeline
-st-gsheets-connection=0.0.4
+st-gsheets-connection
