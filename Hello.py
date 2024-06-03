@@ -8,11 +8,16 @@ st.markdown("""
         [data-testid=stSidebar] {
             background-color: #FFF8DC;
         }
+
+        /* Sidebar text color */
+    	.css-1lcbmhc, .css-1lcbmhc * {
+        color: black !important;
+    	}
     </style>
     """, unsafe_allow_html=True)
 
 with st.sidebar:
-	st.image("images/linkedin_icon.png", use_column_width=True)
+	st.image("images/photo.png", use_column_width=True)
 	st.title("""Tzu-Yang (Peter) Huang""")
 	st.markdown("- Data Scientist")
 
@@ -33,7 +38,7 @@ st.markdown(
         background-size: cover;
         background-attachment: fixed;
         background-position: top left;
-        opacity: 0.75; /* Adjust the opacity value for transparency */
+        opacity: 1; /* Adjust the opacity value for transparency */
     }}
     .middle-text {{
         position: fixed;
