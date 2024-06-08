@@ -26,7 +26,6 @@ st.title("Contact Me")
 
 
 # Create a connection object.
-#conn = st.secrets['gsheets']
 conn = st.connection("gsheets", type=GSheetsConnection)
 def read_data():
     return conn.read(worksheet="sheet1", usecols=[0, 1, 2], ttl="0")
