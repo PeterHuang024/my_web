@@ -34,7 +34,7 @@ st.link_button('Full Article', 'https://medium.com/@kobe24abc/syracuse-universit
 st.markdown("- Data 美國找工資源分享")
 st.link_button('Full Article', 'https://medium.com/@kobe24abc/data-%E7%BE%8E%E5%9C%8B%E6%89%BE%E5%B7%A5%E8%B3%87%E6%BA%90%E5%88%86%E4%BA%AB-46d792c5c90c')
 
-st.markdown("Streamlit: Data Science App的好工具")
+st.markdown("- Streamlit: Data Science App的好工具")
 st.link_button('Full Article', "https://medium.com/@kobe24abc/streamlit-data-science-app%E7%9A%84%E5%A5%BD%E5%B7%A5%E5%85%B7-5802a0dde498")
 
 ################
