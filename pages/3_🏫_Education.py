@@ -35,7 +35,7 @@ with col1:
 with col3:
 	st.markdown("#### 2020 ~ 2022")
 
-st.markdown('- TA for Big Data Analytics Course')
+st.markdown('- Teaching Assistant in IST718: Big Data Analytics Course')
 st.divider()
 
 col1, col2, col3 = st.columns([2,0.5,1])
